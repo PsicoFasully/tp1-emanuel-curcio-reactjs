@@ -5,6 +5,7 @@ import './App.css';
 import ItemDetailContainer from './componestes NavBar/ItemDetailContainer';
 import ItemListContainer from'./componestes NavBar/ItemListContainer'
 // import Ad from './componestes NavBar/ItemListContainer';
+import Cart from './componestes NavBar/CartContainer';
 import {
   BrowserRouter,
   Routes,
@@ -27,6 +28,7 @@ function App() {
       <Route path="/" element ={<ItemListContainer/>}/>
       <Route path='/category/:categoryId' element={<ItemListContainer/>}/>
       <Route path="/detail" element ={<ItemDetailContainer/>}/>
+      <Route path='/cart' element={<Cart/>}/>
       <Route path='*' element={<NotFound/>}/>
     </Routes>
 
