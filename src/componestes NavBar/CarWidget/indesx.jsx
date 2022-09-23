@@ -3,7 +3,9 @@ import {HiShoppingCart} from 'react-icons/hi';
 const CarWidget = ()=>{
     return(
         <div style={{
-            width: "70px"
+            width: "70px",
+            right: '20px',
+            top: '5px',
             
         }}>
 

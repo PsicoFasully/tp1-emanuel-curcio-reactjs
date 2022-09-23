@@ -3,11 +3,19 @@ import React from 'react';
 
 import CarWidget from './CarWidget/indesx';
 import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { Shop } from './context';
 
 
 
 
 const NavBar = () => {
+
+    const value = useContext(Shop)
+    console.log(value)
+
+
+
     return (
         <div>
         <ul class="lista">

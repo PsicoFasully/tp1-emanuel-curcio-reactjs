@@ -13,12 +13,15 @@ import {
   
 } from "react-router-dom";
 import NotFound from './componestes NavBar/NotFound';
+import ShopProvider from './componestes NavBar/context';
+
 
 
 
 
 function App() {
   return (
+    <ShopProvider>
 <BrowserRouter>
         <NavBar/>
         
@@ -33,6 +36,7 @@ function App() {
     </Routes>
 
 </BrowserRouter>
+</ShopProvider>
   );
 }
 
