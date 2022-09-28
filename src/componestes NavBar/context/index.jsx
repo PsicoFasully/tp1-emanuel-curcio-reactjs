@@ -32,20 +32,20 @@ const ShopProvider = ({children}) => {
         return cart.some(product => product.id === id)
     }
 
-    const removeItem = (item) => {
-const isInCart = item.find(
-    (product) => product.id ==item.id
-);
+    const removeItem = (itemToRemove) => {
+        const productosFiltrados = cart.filter(item !== itemToRemove)
+        setCart(productosFiltrados)
+
     }
 
     const clearCart = () => {
-        
+        setCart([]);
 
     }
 
 
     return (
-        <Shop.Provider value={{ cart, addItem}}>
+        <Shop.Provider value={{ cart, addItem, removeItem, clearCart}}>
             {children}
         </Shop.Provider>
     )
