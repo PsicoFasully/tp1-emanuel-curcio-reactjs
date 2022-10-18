@@ -13,7 +13,7 @@ import {
   
 } from "react-router-dom";
 import NotFound from './componestes NavBar/NotFound';
-import ShopProvider from './componestes NavBar/context';
+import ShopProvider from './componestes NavBar/context/ShopProvider';
 
 
 

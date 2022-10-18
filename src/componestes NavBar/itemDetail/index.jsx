@@ -1,7 +1,7 @@
 import  { useState } from "react";
 import ItemCount from "../ItemCount";
 import { Form, useNavigate } from "react-router-dom";
-import { Shop } from "../context/index"
+import { Shop } from "../context/ShopProvider"
 import React, {useContext} from "react";
 
 const ItemDetail = ({ product }) => {

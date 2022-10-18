@@ -1,6 +1,6 @@
 
 import Item from '../item'
-import { Shop } from '../context'
+import { Shop } from '../context/ShopProvider'
 import React, {useContext} from 'react'
 
 const ItemList = ({products}) => {
@@ -15,7 +15,7 @@ const ItemList = ({products}) => {
 
 
   return (
-    <div className='item-container'>
+    <div className="item-container">
         {products.length ? products.map(product => {
             return <Item key={product.id} product={product}/>
         })

@@ -1,7 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import './style.css'
-
+import "../item/styles.scss"
 
 
 const Item = ({product}) => {
@@ -11,9 +10,9 @@ const Item = ({product}) => {
     navigate(`/detail/${product.id}`)
   }
   return (
-    <div onClick={handleNavigate}>
-      <img src={product.image} width={250} alt="productos"/>
-    <h1>{product.name}</h1>
+    <div className='card-container' onClick={handleNavigate}>
+      <img className='card-img' src={product.image} width={250} alt="productos"/>
+    <h1 className='card-title' >{product.name}</h1>
     </div>
   )
 }

@@ -4,7 +4,7 @@ import React from 'react';
 import CarWidget from './CarWidget/indesx';
 import { Link } from 'react-router-dom';
 import { useContext } from 'react';
-import { Shop } from './context';
+import { Shop } from './context/ShopProvider';
 
 
 
