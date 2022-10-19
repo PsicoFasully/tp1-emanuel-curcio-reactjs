@@ -1,7 +1,8 @@
 .cardContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: inline-block;
+    vertical-align:top;
+    
+
     background-color: chocolate;
     gap: 30px;
     padding: 15px;
@@ -12,6 +13,9 @@
     cursor: pointer;
 
     .card-title{
+        display: inline-block;
+        vertical-align:top;
+        
         font-size: 20px;
         line-height: 24px;
         letter-spacing: 0.04em;
@@ -19,11 +23,17 @@
     }
 
     .card-img{
+        display: inline-block;
+        vertical-align:top;
+        
         max-height: 350px;
     }
 }
 
 .card-container:hover{
+    display: inline-block;
+    vertical-align:top;
+    
     transform: scale(1.06);
     transition: 0.3s ease;
 }
